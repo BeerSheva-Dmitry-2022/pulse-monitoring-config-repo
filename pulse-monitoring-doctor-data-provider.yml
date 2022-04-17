@@ -2,8 +2,8 @@ spring:
   datasource:
     driver-class-name: org.postgresql.Driver
     password: ${POSTGRES_PASSWORD}
-    username: swyxhvzinfimjs
-    url: jdbc:postgresql://ec2-34-197-84-74.compute-1.amazonaws.com:5432/dbgob8bc5vraqo
+    username: ${POSTGRES_USERNAME}
+    url: jdbc:postgresql://${POSTGRES_HOST}:5432/${POSTGRES_DATABASE}
   jpa:
     hibernate:
       ddl-auto: update
